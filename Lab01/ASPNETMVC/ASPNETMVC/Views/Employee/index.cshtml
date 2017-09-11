@@ -1,0 +1,33 @@
+﻿@model List<ASPNETMVC.Models.EmployeeInfo>
+
+@{
+    Layout = "~/Views/_SiteLayout.cshtml";
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>index</title>
+</head>
+<body>
+    <div>
+        <h2>@ViewBag.Greeting</h2>
+        @if (Model != null)
+        {
+            <h3>Employees</h3>
+            <ul>
+                @foreach (var e in Model)
+                {
+                    <li>@e.FirstName @e.LastName (@e.EmailAddress)</li>
+                }
+            </ul>
+        }
+        @Html.ActionLink("Add New Employee", "Create")
+
+
+    </div>
+</body>
+</html>

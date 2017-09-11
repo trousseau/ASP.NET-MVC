@@ -1,0 +1,10 @@
+C:\UCSD\ASP.NET MVC\Project\VideoLibraryBusinessLayer\bin\Debug\VideoLibraryBusinessLayer.dll
+C:\UCSD\ASP.NET MVC\Project\VideoLibraryBusinessLayer\bin\Debug\VideoLibraryBusinessLayer.pdb
+C:\UCSD\ASP.NET MVC\Project\VideoLibraryBusinessLayer\obj\Debug\VideoLibraryBusinessLayer.dll
+C:\UCSD\ASP.NET MVC\Project\VideoLibraryBusinessLayer\obj\Debug\VideoLibraryBusinessLayer.pdb
+C:\Users\tyler\Source\Repos\Coursework\ASP.NET MVC\VideoLibrary\VideoLibraryApp\VideoLibraryBusinessLayer\bin\Debug\VideoLibraryBusinessLayer.dll
+C:\Users\tyler\Source\Repos\Coursework\ASP.NET MVC\VideoLibrary\VideoLibraryApp\VideoLibraryBusinessLayer\bin\Debug\VideoLibraryBusinessLayer.pdb
+C:\Users\tyler\Source\Repos\Coursework\ASP.NET MVC\VideoLibrary\VideoLibraryApp\VideoLibraryBusinessLayer\bin\Debug\VideoLibraryBusinessLayer.dll.CodeAnalysisLog.xml
+C:\Users\tyler\Source\Repos\Coursework\ASP.NET MVC\VideoLibrary\VideoLibraryApp\VideoLibraryBusinessLayer\bin\Debug\VideoLibraryBusinessLayer.dll.lastcodeanalysissucceeded
+C:\Users\tyler\Source\Repos\Coursework\ASP.NET MVC\VideoLibrary\VideoLibraryApp\VideoLibraryBusinessLayer\obj\Debug\VideoLibraryBusinessLayer.dll
+C:\Users\tyler\Source\Repos\Coursework\ASP.NET MVC\VideoLibrary\VideoLibraryApp\VideoLibraryBusinessLayer\obj\Debug\VideoLibraryBusinessLayer.pdb

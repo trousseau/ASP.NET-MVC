@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>NewUser</title>
+</head>
+<body>
+    <div>
+        <h2>New User Registration</h2>
+        <p>
+            @ViewBag.StatusMessage
+        </p>
+
+        @using (var f = Html.BeginForm())
+        {
+            <table border="0">
+                <tr>
+                    <td>Email Address:</td>
+                    <td>
+                        @Html.TextBox("EmailAddress")
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td>
+                        @Html.Password("Password1")
+                    </td>
+                </tr>
+                <tr>
+                    <td>Confirm Password:</td>
+                    <td>
+                        @Html.Password("Password2")
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <div>
+                    <input type="submit" value="Create" />
+                </div>
+            </div>
+        }
+    </div>
+</body>
+</html>

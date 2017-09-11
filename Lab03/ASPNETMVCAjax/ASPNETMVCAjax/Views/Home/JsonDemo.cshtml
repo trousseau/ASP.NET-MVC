@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JsonDemo</title>
+</head>
+<body>
+    <div>
+        <div>
+            <label for="make">Make: </label>
+            <input id="make" />
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#make").autocomplete({
+                source: "Make",
+                minLength: 2
+            });
+        } );
+    </script>
+</body>
+</html>

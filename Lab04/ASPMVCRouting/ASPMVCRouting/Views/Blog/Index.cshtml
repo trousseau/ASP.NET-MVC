@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @if (ViewBag.Day == null)
+        {
+            <h1>Blog Post for @ViewBag.Month/@ViewBag.Year</h1>
+        }
+        else
+        {
+            <h1>Blog Post for @ViewBag.Month/@ViewBag.Day/@ViewBag.Year</h1>
+        }
+
+    </div>
+</body>
+</html>

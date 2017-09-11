@@ -1,0 +1,107 @@
+﻿@model ASPNETMVCForm.Models.EmployeeInfo
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+    <style type="text/css">
+        .field-validation-error{
+            color:red;
+        }
+        .validation-summary-errors{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Create New Employee</h2>
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary(true)
+            <table>
+                <tr>
+                    <td>
+                        @Html.LabelFor(Model => Model.FirstName)
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(Model => Model.FirstName)
+                        @Html.ValidationMessageFor(Model => Model.FirstName)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        @Html.LabelFor(Model => Model.LastName)
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(Model => Model.LastName)
+                        @Html.ValidationMessageFor(Model => Model.LastName)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        @Html.LabelFor(Model => Model.EmailAddress)
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(Model => Model.EmailAddress)
+                        @Html.ValidationMessageFor(Model => Model.EmailAddress)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        @Html.LabelFor(Model => Model.Gender)
+                    </td>
+                    <td>
+                        @Html.RadioButtonFor(Model => Model.Gender, ASPNETMVCForm.Models.Gender.Female)
+                        Female
+                        @Html.RadioButtonFor(Model => Model.Gender, ASPNETMVCForm.Models.Gender.Male)
+                        Male
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        @Html.LabelFor(Model => Model.IsActive)
+                    </td>
+                    <td>
+                        @Html.CheckBoxFor(Model => Model.IsActive)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        @Html.LabelFor(Model => Model.AnnualSalary)
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(Model => Model.AnnualSalary)
+                        @Html.ValidationMessageFor(Model => Model.AnnualSalary)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        @Html.LabelFor(Model => Model.DepartmentId)
+                    </td>
+                    <td>
+                        @Html.DropDownListFor(Model => Model.DepartmentId, (IEnumerable<SelectListItem>)ViewData["Departments"])
+                    </td>
+                </tr>
+
+            </table>
+            <input type="submit" value="Create" />
+        }
+    </div>
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</body>
+</html>
